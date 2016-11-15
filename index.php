@@ -118,7 +118,7 @@ $mp3_data = json_decode($response, true);
 /* Download other songs */
 $dir = new DirectoryIterator(dirname(__FILE__)."/uploads/");
 $i=1;
-echo "<div class="table-responsive"><table class='.table-striped'>";
+echo "<div class='table-responsive'><table class='.table-striped'>";
 echo "<tr><th colspan=2><h1 class='text-center'> Download other songs</h1></th></tr>";
 foreach ($dir as $fileinfo) {
     if (!$fileinfo->isDot()) {
